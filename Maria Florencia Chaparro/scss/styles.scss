@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#cabecera{
+    background-color: #D6D6D3;
+
+   /* background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;*/
+    /* background-color: rgb(91, 181, 233); */
+
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#imagen_cabecera{
+
+    img {
+        width: 250px; 
+        height: auto; 
+    }
+}
+
+#cuerpo{
+    padding: 30px 30px 30px 30px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#imagen{
+    border: 2px solid black;
+}
+
+.div_section{
+    border: 2px solid rgb(167, 11, 11);
+    width: 30%; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.letras_verdes{
+    font-size: 30px;
+    color: darkgreen;
+    }
+
+#footer{
+    background-color: #a0aaac;
+    border: 0.5px #D6D6D3;
+    height: 30px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+    
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(161, 149, 149);
+    text-decoration: none;
+}
+.container_demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    justify-content: center;
+}
+.item_demo {
+    flex: 1 1 200px; 
+    background-color: #f1f1f1;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+
+#cuerpo_info {
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    height: 100vh; 
+}
+
+section {
+    margin: 20px;
+}
+
+.card-pc{ 
+    width: 18rem;
+}
+
+
+@media (max-width: 320px) {
+    #cuerpo{
+        display: block;
+        align-items: center;
+    }
+    .card-pc{ 
+        width: auto;
+    }
+
+    
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        p {
+            font-size: 0.9rem;
+        }
+}
