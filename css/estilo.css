@@ -1,3 +1,11 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,18 +14,19 @@ body {
 }
 
 #cabecera {
-  background-color: #D6D6D3;
-
+  background-color: #a7a7a7;
   margin-top: 50px;
   height: auto;
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
 
 #imagen_cabecera img {
+  animation: slideIn 1s ease;
   width: 250px;
   height: auto;
 }
@@ -41,8 +50,8 @@ body {
   margin-right: 50px;
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
 }
@@ -53,8 +62,8 @@ body {
 }
 
 #footer {
-  background-color: #a0aaac;
-  border: 0.5px #D6D6D3;
+  background-color: #070707;
+  border: 0.5px #a7a7a7;
   height: 30px;
 }
 
@@ -80,14 +89,14 @@ li {
 }
 
 a {
-  color: white;
+  color: #bd0404;
   text-decoration: none;
   font-size: 18px;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(161, 149, 149);
+  color: #2004bd;
   text-decoration: none;
 }
 
@@ -111,7 +120,7 @@ a:hover {
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 20px; 
+  height: 100vh;
 }
 
 section {
@@ -122,56 +131,35 @@ section {
   width: 18rem;
 }
 
-.card-body {
-  margin-top: 20px; 
-}
-
-.card-title {
-  margin-top: 20px; 
-  margin-bottom: 10px; 
-}
-
-.card-text {
-  margin-top: 20px;}
-  
-  .video-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; 
-    margin-bottom: 20px;
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 @media (max-width: 320px) {
   #cuerpo {
     display: block;
     align-items: center;
   }
-
   .card-pc {
     width: auto;
   }
-
   h1 {
     font-size: 1.5rem;
   }
-
   p {
     font-size: 0.9rem;
+  }
+  #cuerpo_info {
+    padding: 5px;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 0.9em;
   }
   .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; 
+    padding-top: 56.25%;
     margin-bottom: 20px;
   }
-  
   .video-container iframe {
     position: absolute;
     top: 0;
@@ -181,3 +169,4 @@ section {
   }
 }
 
+/*# sourceMappingURL=estilo.css.map */
