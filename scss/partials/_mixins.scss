@@ -1,7 +1,0 @@
-@mixin center-flex {
-    display: flex;
-    align-items: center;
-  }
-  @mixin slideIn($duration: 1s, $timing-function: ease) {
-    animation: slideIn $duration $timing-function;
-  }
